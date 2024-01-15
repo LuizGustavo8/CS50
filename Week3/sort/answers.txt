@@ -1,0 +1,11 @@
+sort1 uses: Bubble
+
+How do you know?: Was the slowest for the reversed files
+
+sort2 uses: Merge
+
+How do you know?: Was the fastest for the reversed and random files
+
+sort3 uses: Selection
+
+How do you know?: Was visible slower then then sort2 in reversed, and by elimination can only be it
