@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function(){
+
+                let incorret_buttons = document.querySelectorAll('.incorrect');
+
+                let correct_button = document.querySelector('.correct');
+
+                correct_button.addEventListener('click', function() {
+                    correct_button.style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = 'Correct Answer!';
+                });
+
+                for(let i = 0; i < incorret_buttons.length; i++){
+                    incorret_buttons[i].addEventListener('click', function() {
+                        incorret_buttons[i].style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML = 'Incorrect Answer!';
+                });
+                }
+
+                document.querySelector('#check').addEventListener('click', function() {
+                    let input = document.querySelector('input');
+                    if(input.value === 'White') {
+                        input.style.backgroundColor = 'Green';
+                        document.querySelector('#feedback2').innerHTML = 'Correct Answer!';
+                    } else {
+                        input.style.backgroundColor = 'red';
+                        document.querySelector('#feedback2').innerHTML = 'Incorrect Answer!';
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                    <h3>How many sticks are necessary to make a canoe?</h3>
+
+                    <button class = "incorrect">Three Sticks</button>
+                    <button class = "incorrect">Five Sticks</button>
+                    <button class = "correct">Seven Sticks</button>
+                    <button class = "incorrect">Nine Sticks</button>
+
+                    <p id="feedback1"></p>
+
+            </div>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                    <h3>What is the color from napoleon's white horse?</h3>
+
+                    <input type="text"></input>
+                    <button id = "check">Check Answer</button>
+
+                    <p id="feedback2"></p>
+            </div>
+        </div>
+    </body>
+</html>
