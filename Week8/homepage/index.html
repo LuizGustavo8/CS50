@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link href="styles.css" rel="stylesheet" >
+
+        <title>DRAKONIA WIKI Webpage</title>
+
+          <!-- Fonte -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <!-- Estilos -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/47814a68c0.js" crossorigin="anonymous"></script>
+        <!-- Progress Bar -->
+        <script src="progressbar.min.js"></script>
+        <!-- Parallax -->
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    </head>
+    <body>
+        <header>
+
+            <div class = "container" id="nav-container">
+                <nav class = "navbar navbar-expand-lg fixed-top">
+                    <a href="#" class="navbar-brand">
+                        <img src="img/pigeon.jpg" alt="Drakonia LOGO" style="width:80px;height:80px;> Welcome to the world of Drakonia!
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button >
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" id="home-menu">Home</a>
+                            <a class="nav-item nav-link" id="arcs-menu">Arcos</a>
+                            <a class="nav-item nav-link" id="characters-menu">Personagens</a>
+                            <a class="nav-item nav-link" id="one-shots-menu">One-Shots</a>
+                            <a class="nav-item nav-link" id="contact-menu">Contato</a>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+
+
+                <!-- slider -->
+                <div id="mainSlider" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#mainSlider" data-slide-to="1"></li>
+                    <li data-target="#mainSlider" data-slide-to="2"></li>
+                    <li data-target="#mainSlider" data-slide-to="3"></li>
+                    <li data-target="#mainSlider" data-slide-to="4"></li>
+                    <li data-target="#mainSlider" data-slide-to="5"></li>
+                    <li data-target="#mainSlider" data-slide-to="6"></li>
+                    <li data-target="#mainSlider" data-slide-to="7"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/Bhyatikan.jpg" class="d-block w-100" alt="A Capital de Ellidah">
+
+                      <!-- tirar classe d-none -->
+
+                      <div class="carousel-caption d-md-block one">
+                        <h2>APOCALIPSE I</h2>
+                        <p>O ínicio do fim</p>
+                        <a href="#" class="main-btn">Ver Arco</a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Zenite.jpg" class="d-block w-100" alt="O Zenite Bélico">
+                      <div class="carousel-caption d-md-block two">
+                        <h2>O Resgate do Diplomata</h2>
+                        <p>O mistério dos Demônios de Helldia</p>
+                        <a href="#" class="main-btn">Ver Arco</a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Medrel.jpg" class="d-block w-100" alt="Medrel, a utopia submaritma">
+                      <div class="carousel-caption d-md-block three">
+                        <h2>As Profundezas do Conhecimento</h2>
+                        <p>Da Serpentina até as profundezas do mar, até onde o desespero do conhecimento se extende?</p>
+                        <a href="#" class="main-btn">Ver Arco</a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Artista.jpg" class="d-block w-100" alt="O Artista">
+                      <div class="carousel-caption d-md-block four">
+                        <h2>A Semana de Arte</h2>
+                        <p>A melodia sangrenta do Artista</p>
+                        <a href="#" class="main-btn">Ver Arco</a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Yamahachi.jpg" class="d-block w-100" alt="O Yamahachi">
+                      <div class="carousel-caption d-md-block five">
+                        <h2>A Lenda de Yamahachi</h2>
+                        <p>Parar uma constelação era apenas o aperitivo para essa lenda antiga</p>
+                        <a href="#" class="main-btn">Ver Arco</a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Cemiterio.jpg" class="d-block w-100" alt="O Cemitério dos Dragões">
+                      <div class="carousel-caption d-md-block six">
+                        <h2>A Justiça dos Famintos</h2>
+                        <p>De dentro das entranhas do culto o terror é ainda maior</p>
+                        <a href="#" class="main-btn">Ver Arco</a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Zodresh.jpeg" class="d-block w-100" alt="Zodresh, Capital de Djinkoh">
+                      <div class="carousel-caption d-md-block seven">
+                        <h2>A Ambição de Uhm</h2>
+                        <p>As partes mais podres de Zodresh não podem ser escondidas pelo seu Neon ofuscante</p>
+                        <a href="#" class="main-btn">Ver Arco</a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Baile.jpg" class="d-block w-100" alt="O Baile">
+                      <div class="carousel-caption d-md-block eight">
+                        <h2>O Banquete Vermelho</h2>
+                        <p>As Festas da Aristocracia de Atlan, sempre regadas ao tinto</p>
+                        <a href="#" class="main-btn">Ver Arco</a>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+
+
+      <!-- Sobre o RPG -->
+
+      <div id="about-area">
+        <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="main-title">Sobre o RPG</h3>
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="img/Otarios.jpeg" alt="Os Otários">
+              </div>
+              <div class="col-md-6">
+                <h3 class="about-title">Os mistérios da terra dos dragões:</h3>
+                <p>Drakonia é um universo de fantasia que conta uma história original.Criada por seus Mestres Luiz Gustavo e Gustavo Carneiro.</p>
+                <p>O RPG nasceu com a reclusão da Pandemia. Com o incentivo do Tio Bernardo as portas do RPG de Mesa se abriram para nós!</p>
+                <p>No Discord demos nossos primeiros passos e com uma sessão de Star Wars fizemos nossa primeira experiência presencial. Cativados pela ritmo dinâmico e criatividade envolvidos nunca mais paramos de jogar!</p>
+                <p>Nossa campanha atual conta com:</p>
+                <ul id="about-list">
+                  <li><i class="fas fa-check"></i> 5 jogadores Fixos, um Flexível e o Mestre.</li>
+                  <li><i class="fas fa-check"></i> Já jogamos 8 Aventuras, sendo a atual o ínicio do Quarto Arco.</li>
+                  <li><i class="fas fa-check"></i> Quando o iniciamos, a mesa chegou a ter 9 jogadores.</li>
+                  <li><i class="fas fa-check"></i> Atualmente jogamos com Pathfinder 2e, mas começamos com Fate.</li>
+                  <li><i class="fas fa-check"></i> Em Março de 2024, completaremos 2 anos de Campanha.</li>
+                  <li><i class="fas fa-check"></i> Foi uma jornada e tanto, mas tenham calma, o Fim dos Tempos está só começando.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+       <!-- Personagens -->
+
+       <div id="services-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+                <h3 class="main-title">Personagens Atuais</h3>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fa-brands fa-earlybirds"></i>
+              <h4>Harubin</h4>
+              <p>O Protagonista Compulsório.</p>
+            </div>
+            <div class="col-md-4 service-box">
+                <i class="fa-solid fa-gun"></i>
+              <h4>Lekko</h4>
+              <p>O Pistoleiro de Pavio Curto.</p>
+            </div>
+            <div class="col-md-4 service-box">
+                <i class="fa-solid fa-hat-wizard"></i>
+              <h4>Thiagão</h4>
+              <p>O Verde!</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fa-solid fa-volcano"></i>
+              <h4>Torgrut</h4>
+              <p>A Erupção Flamejante.</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fa-solid fa-droplet"></i>
+              <h4>Night</h4>
+              <p>O Agente Triplo.</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fa-solid fa-wind"></i>
+              <h4>Tauraa</h4>
+              <p>O Punho de Furacão.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Dados da Jogatina -->
+       <div id="data-area">
+        <div class="container">
+          <div class="row">
+            <div id ="circle-A" class="col-md-3 col-xs-6 circle-box">
+              <div id="circleA"></div>
+              <p>PCs</p>
+            </div>
+            <div id ="circle-B" class="col-md-3 col-xs-6 circle-box">
+              <div id="circleB"></div>
+              <p>Sacrifícios</p>
+            </div>
+            <div id ="circle-C" class="col-md-3 col-xs-6 circle-box">
+              <div id="circleC"></div>
+              <p>Mapas</p>
+            </div>
+            <div id ="circle-D" class="col-md-3 col-xs-6 circle-box">
+              <div id="circleD"></div>
+              <p>NPCs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Jogadores -->
+      <div id="team-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Jogadores</h3>
+            </div>
+            <div class="col-md-3">
+              <div class="card bottom-card">
+                <img src="img/Dani.jpeg" class="card-img-top" alt="Imagem de Perfil 1">
+                <div class="card-body">
+                  <h5 class="card-title">Dani</h5>
+                  <p class="card-text">O tal do Agulheta Amassado</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card bottom-card">
+                <img src="img/Be.jpeg" class="card-img-top" alt="Imagem de Perfil 2">
+                <div class="card-body">
+                  <h5 class="card-title">Bê</h5>
+                  <p class="card-text">o tal do Albedo shonen</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card bottom-card">
+                <img src="img/Thiagao.jpeg" class="card-img-top" alt="Imagem de Perfil 3">
+                <div class="card-body">
+                  <h5 class="card-title">Thiagão</h5>
+                  <p class="card-text">O tal do Apótema</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card bottom-card">
+                <img src="img/Cunha.jpeg" class="card-img-top" alt="Imagem de Perfil 4">
+                <div class="card-body">
+                  <h5 class="card-title">Cunha</h5>
+                  <p class="card-text">O tal do Pablo</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card bottom-card">
+                <img src="img/Gustavo.jpeg" class="card-img-top" alt="Imagem de Perfil 4">
+                <div class="card-body">
+                  <h5 class="card-title">Gustavão</h5>
+                  <p class="card-text">O tal do Main Monge</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card bottom-card">
+                <img src="img/Henrique.jpeg" class="card-img-top" alt="Imagem de Perfil 4">
+                <div class="card-body">
+                  <h5 class="card-title">Henricão</h5>
+                  <p class="card-text">O tal do Senhor Tubarudo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Linha do Tempo-->
+      <div id="time-line">
+        <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="main-title">Cronologia de Drakonia</h3>
+              </div>
+                  <div class="flex-parent">
+                    <div class="input-flex-container">
+                      <input type="radio" name="timeline-dot" data-description="50">
+                      <div class="dot-info" data-description="50">
+                        <span class="year">50</span>
+                        <span class="label">Khakbos</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="536">
+                      <div class="dot-info" data-description="536">
+                        <span class="year">536</span>
+                        <span class="label">Ellidah</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="2429" checked>
+                      <div class="dot-info" data-description="2429">
+                        <span class="year">2429</span>
+                        <span class="label">Belier</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="2860">
+                      <div class="dot-info" data-description="2860">
+                        <span class="year">2860</span>
+                        <span class="label">CoC</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="2912">
+                      <div class="dot-info" data-description="2912">
+                        <span class="year">2912</span>
+                        <span class="label">Tecnomagia</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="2999">
+                      <div class="dot-info" data-description="2999">
+                        <span class="year">2999</span>
+                        <span class="label">Guerra</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="3022">
+                      <div class="dot-info" data-description="3022">
+                        <span class="year">3022</span>
+                        <span class="label">Guildas</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="3046">
+                      <div class="dot-info" data-description="3046">
+                        <span class="year">3046</span>
+                        <span class="label">Famintos</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="3049">
+                      <div class="dot-info" data-description="3049">
+                        <span class="year">3049</span>
+                        <span class="label">Irmandade</span>
+                      </div>
+                      <input type="radio" name="timeline-dot" data-description="3050">
+                      <div class="dot-info" data-description="3050">
+                        <span class="year">3050</span>
+                        <span class="label">Torneio</span>
+                      </div>
+                      <div id="timeline-descriptions-wrapper">
+
+
+                        <h5 data-description="50">Um Assassinato Divino</h5>
+                        <h5 data-description="536">O Continente Perdido </h5>
+                        <h5 data-description="2429">As Antigas Nações</h5>
+                        <h5 data-description="2860">Das Dunas Escaldantes de Zodresh até os Picos Gélidos de Wu</h5>
+                        <h5 data-description="2912">A Revolução Tecnomágica</h5>
+                        <h5 data-description="2999">O General Molchat.</h5>
+                        <h5 data-description="3022">A Aliança</h5>
+                        <h5 data-description="3046">As Entranhas do Misterioso Culto</h5>
+                        <h5 data-description="3049">O Nascimento da Irmandade da Aurora</h5>
+                        <h5 data-description="3050">O Último Crepúsculo</h5>
+
+                        <p data-description="50">A morte de Khakbos, o segredo dos Deuses.</p>
+                        <p data-description="536">
+                          Após as invasões a nação se dividiu e os povos Ellidahs se dispersaram por toda Drakonia.
+                          Apesar de seu nome ter sido esquecido, suas ruínas e relíquias frequentemente são o objetivo de arqueólogos e estudiosos.
+                          Os últimos registros de Ellidah se aproximam do final do Primeiro Crepúsculo.
+                          Rumores sobre a terra perdida, que teria sido envadida pelas águas, persistem até hoje.
+
+                        </p>
+                        <p data-description="2429">
+                          Durante os milênios, frente a guerra e as inteperies, grandes nações ascenderam enquanto outras declinaram.
+                          Parte da fronteira do atual país de Umbra com Wu, uma vez deu lugar um oásis no meio das montanhas.
+                          Conhecida como Belier, a região era abastecida pelas minas e prosperava firmemente.
+                          Por 620, o brilho Azul Topázio de suas bandeiras enfeitou as irreverentes muralhas de mármore da capital.</p>
+                        <p data-description="2860">
+                          Se enganam aqueles que acreditam que a urbanização de Drakonia se deu pelo advento da tecnomagia.
+                          Séculos antes, o óleo de baleia e as minas de carvão, abasteciam e moviam as grandes cidades.
+                          Caravelas, Trens e Dirigíveis batalhavam para preencher o ar com seu pesado vapor, mas este já estava carregado de mistérios adormecidos.
+                          Hoje, muito se fala das invenções de Viktor Kliscor, mas pouco se fala de seu projeto Graal.
+                          Mas o que seria de Kliscor, sem o artefato recuperado pela expedição do Professor Planket?
+                        </p>
+                        <p data-description="2912">
+                          Um século antes do ínicio do próximo crepúsculo, um jovem inventor zodreka estava prestes a virar o mundo de drakonia de cabeça para baixo.
+                          Apadrinhado e patrocionado por um dos Barões de Zodresh, Viktor Kliscor foi responsável por 5 projetos revolucionários.
+                          No mais famoso, O Glif, ele conseguiu unificar a munipulação mágica em um alfabeto rúnico.
+                          Desde então, o desenvolvimento explosivo da tecnomagia vem dominando e revolucionando a vida dos habitantes drakonianos.
+                        </p>
+                        <p data-description="2999">
+                          Com o desaparecimento dos 8 Guardiões, as grandes fonteiras de umbra começaram a sofrer com ataques terroristas, levando a destruição de incontáveis vilas periféricas.
+                          Entretanto, antes mesmo do início do Crepúsculo, o visionário General Molchat já calculava friamente seus planos.
+                          Se aproveitando da potência metalurgica de Umbra, Molchat revolucionou a tecnomagia bélica ao amplificar a força de suas armas e armaduras com Drakôniun.
+                          A promessa de Vingança contra unificou o Império e com um poder nunca visto antes o exército negro marchou vitorioso sobre todo o continente.
+                        </p>
+                        <p data-description="3022">
+                          Em vinte e três anos, a miséria e destruição da guerra havia feito centenas de milhares de vítimas.
+                          Os avanços umbros batiam aos portões das capitais, em poucos dias todo o continente hastearia bandeiras negras.
+                          Contudo o nascimento das primeiras Guildas em Atlan, segurava por um triz a invasão inimiga em Varean.
+                          A improvável vitória veio da redenção de criminosos, não só em Atlan como nas águas de Nenphis, com a traição de Don Glank.
+                       </p>
+                        <p data-description="3046">
+                          Pouquíssimo se sabe sobre o Culto. A própria denominação é novidade, uma vez que a correlação entre os eventos misteriosos e rituais fanáticos também é recente.
+                          Mas a falta de informação não é concidência, nem mesmo aqueles envolvidos em suas atividades, poderiam saber os objetivos do recém descoberto Pontífice.
+                          Itens poderosos e aliados prestigiados continuam desaparecendo sob a influência dos interesses cultistas.
+                          Contudo o verdadeiro mistério se esconde em um segredo essencialmente prístino.
+                        </p>
+                        <p data-description="3049">
+                          Com o despertar de um novo dia, os primeiros raios de luz iluminam os sobreviventes pelas rachaduras da cripta subterrânea.
+                          Os laços de amizade feitos naquele dia, frutificaram em fraternidade e eternizaram os caminhos dos bravos aventureiros.
+                          Enquanto as sombras se escondiam e o sangue secava, os olhos sem vida do artista os encarava.
+                          Estava aberta a caixa de pandora, o novo alicerce da esperança, eis a Irmandade da Aurora.
+                        </p>
+                        <p data-description="3050">
+                          Um artista, um Diplomata e um Visionário, onde estão?
+                          Se apresentam os cavaleiros, para onde vão?
+                          O pontífice se ergue, cadê tua oração?
+                        </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </main>
+        <!-- Rodapé -->
+  <footer>
+    <div id="contact-area">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Entre em contato conosco</h3>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-phone"></i>
+              <p><span class="contact-tile">Ligue para:</span> (31) 4002-8922</p>
+              <p><span class="contact-tile">Horários:</span> 8:00 - 19:00</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-envelope"></i>
+              <p><span class="contact-tile">Envie um email:</span> luiz.w8w@gmail.com</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span class="contact-tile">Venha tomar um café:</span> Rua dos Bobos - nº 0</p>
+            </div>
+            <div class="col-md-6" id="msg-box">
+              <p>Deixe uma mensagem para que o Clodoaldo nos entregue:</p>
+              <div class="clodoaldo">
+                <img src="img/pigeon.jpg" alt="Clodoaldo, O pombo" style="width:200px;height:200px;">
+              </div>
+            </div>
+            <div class="col-md-6" id="contact-form">
+              <form>
+                <input type="text" class="form-control" placeholder="E-mail" name="email">
+                <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                <input type="submit" class="main-btn">
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="copy-area">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              <p>Desenvolvido por <a href="https://www.youtube.com/watch?v=hAx4Lql_-VI" target="_blank">Blind Rooster</a> &copy; 2024</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts do projeto -->
+    <script src="scripts.js"></script>
+    </body>
+</html>
